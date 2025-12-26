@@ -26,23 +26,33 @@ body{
     flex: 1;
     color: white;
 }
-#t21{
-    
-    width:2px;
-}
+
 
 .Productboxes{
     background-color: aquamarine;
-    display: flex;
-    flex: 1;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: darkgray;
+   color: white;
 }
 
+.Productboxes.Box{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+
+}
 
 .PageBottom{
-    background-color: cadetblue;
+    background-color: #37475a;
     display: grid;
     grid-template-rows: 1fr;
+    text-align: center;
+    color: white;
 }
 .PageBottom.boxes{
    
@@ -50,7 +60,10 @@ body{
 }
 
 .PageBottom.boxes.Middle{
-    background-color: beige;
+    background-color: #232f3e;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 100px;
+    padding-right: 100px;
 }
+
