@@ -1,0 +1,36 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.t{
+    display:flex;
+    flex-direction: row;
+    background-color: #131921;
+    color: white;
+    flex: 1;
+}
+#Logo{
+    background-color:#131921;
+}
+#Searchbar{
+    background-color: gray;
+}
+#pincode{
+    background-color: bisque;
+}
+.t2{
+    display: flex;
+    flex-direction: row;
+    background-color: #232f3e;
+    flex: 1;
+    color: white;
+}
+#t21{
+    
+    width:2px;
+}
+
+#t22{
+    
+}
