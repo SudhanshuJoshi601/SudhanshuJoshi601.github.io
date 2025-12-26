@@ -31,6 +31,26 @@ body{
     width:2px;
 }
 
-#t22{
+.Productboxes{
+    background-color: aquamarine;
+    display: flex;
+    flex: 1;
     
+}
+
+
+.PageBottom{
+    background-color: cadetblue;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.PageBottom.boxes{
+   
+    
+}
+
+.PageBottom.boxes.Middle{
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
