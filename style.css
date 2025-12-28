@@ -2,30 +2,42 @@ body{
     margin:0px;
     padding:0px;
     background-color: #e3e6e6;
+    font-family:Arial,sans-serif;
 }
 
 div{
-    margin-left: 10px;
-    margin-right: 10px;
+    /*margin-left:4%;
+    margin-right:4%;*/
+
+    
 }
 
 .t{
     display:grid;
-    grid-template-columns: 1fr 1fr 4fr 1fr;
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: 1;
     background-color: #131921;
     color: white;
     
     margin-left: 0px;
     margin-right: 0px;
+    
+}
+.t.left{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #Logo{
     background-color:#131921;
 }
 #Searchbar{
+ height: 40px;
  
+
 }
-#pincode{
-    
+#Pincode{
+    color: gray;
+    font-size:10px;
 }
 .t2{
     display: flex;
@@ -35,16 +47,21 @@ div{
     color: white;
     margin-left: 0px;
     margin-right: 0px;
+    font-size:14px;
 }
 
 
 .Productboxes{
+    font-family: Arial,sans-serif;
     background-color: aquamarine;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: darkgray;
-   color: white;
+    color: black;
+    font-size: 21px;
+   
+    
 }
 
 .Productboxes.Box{
@@ -53,10 +70,21 @@ div{
     grid-template-columns: 1fr;
     margin-right: 20px;
     margin-left: 20px;
-    
-
+    margin-bottom:0px;
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+.Productboxes.Box.pic{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows:1fr 1fr;
+   margin: 5px;
 
+    
+    
+}
 .PageBottom{
     background-color: #37475a;
     display: grid;
