@@ -9,12 +9,12 @@ div{
     /*margin-left:4%;
     margin-right:4%;*/
 
-    
+
 }
 
 .t{
     display:grid;
-    grid-template-columns: 3fr 9fr;
+    grid-template-columns: 2fr 7fr 1fr;
     grid-template-rows: 1;
     background-color: #131921;
     color: white;
@@ -23,15 +23,23 @@ div{
     margin-right: 0px;
     
 }
-.t.left{
+.t.middle{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+#dropdownall{
+    padding: 0px;
+    width: 30px;
+    height: 40px;
+    padding-top: 5px;
+
 }
 #Logo{
     background-color:#131921;
 }
 #Searchbar{
- height: 40px;
+/* height: 40px;
+ width: 1200px;*/
  
 
 }
@@ -60,6 +68,7 @@ div{
     background-color: darkgray;
     color: black;
     font-size: 21px;
+   
    
     
 }
