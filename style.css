@@ -6,8 +6,8 @@ body{
 }
 
 div{
-    margin-left:4%;
-    margin-right:4%;
+    margin-left:2.5%;
+    margin-right:2.5%;
 
 
 }
@@ -97,8 +97,9 @@ div{
    
 }
 .Productboxes img{
-     width: 90%;
+     width: 100%;
     height: auto;
+    align-items: space-evenly;
    
 }
 
@@ -108,8 +109,8 @@ div{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 3%;
+    margin-left: 3%;
     margin-bottom:0px;
     display: inline-block;
     background-color: white;
@@ -120,7 +121,8 @@ div{
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows:1fr 1fr;
-   margin: 5px;
+   
+   font-size: 12px;
     
     
 }
@@ -139,11 +141,36 @@ div{
     
 }
 
-.PageBottom.boxes.Middle{
+/*.PageBottom.boxes.Middle{
     background-color: #232f3e;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-left: 100px;
     padding-right: 100px;
 }
+*/
+.PageBottom.Middle{
+    background-color: #232f3e;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4%;
+    padding: 3% 5%;
+    
+}
 
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.box h5{
+    margin: 0 0 8px 0;
+}
+
+.box p{
+    font-size: 12px;
+    margin: 4px 0;
+    color: #ddd;
+}
