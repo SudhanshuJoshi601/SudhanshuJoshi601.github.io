@@ -6,8 +6,8 @@ body{
 }
 
 div{
-    /*margin-left:4%;
-    margin-right:4%;*/
+    margin-left:4%;
+    margin-right:4%;
 
 
 }
@@ -23,25 +23,51 @@ div{
     margin-right: 0px;
     
 }
-.t.middle{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.t.middle {
+    display: flex;
+    align-items: stretch;
 }
-#dropdownall{
-    padding: 0px;
-    width: 30px;
+
+#dropdownall,
+#Searchicon {
+    flex-shrink: 0;
+}
+
+#Searchbar {
+    flex: 1;
+}
+
+#Searchbar input {
+    width: 100%;
     height: 40px;
-    padding-top: 5px;
-
 }
-#Logo{
-    background-color:#131921;
+#dropdownall select {
+    height: 40px;
+    border: none;
+    background-color: #f3f3f3;
+    padding: 0 8px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 60px;
 }
-#Searchbar{
-/* height: 40px;
- width: 1200px;*/
- 
 
+#dropdownall select:focus {
+    outline: none;
+}
+
+#Searchicon {
+    height: 40px;             
+    background-color: #febd69;
+    display: flex;             
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+#Searchicon img {
+    height: 20px;
+    width: auto;
 }
 #Pincode{
     color: gray;
@@ -69,9 +95,14 @@ div{
     color: black;
     font-size: 21px;
    
-   
-    
 }
+.Productboxes img{
+     width: 90%;
+    height: auto;
+   
+}
+
+
 
 .Productboxes.Box{
     display: grid;
@@ -90,10 +121,10 @@ div{
    grid-template-columns: 1fr 1fr;
    grid-template-rows:1fr 1fr;
    margin: 5px;
-
     
     
 }
+
 .PageBottom{
     background-color: #37475a;
     display: grid;
