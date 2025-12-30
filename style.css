@@ -279,3 +279,117 @@ div{
     margin: 4px 0;
     color: #ddd;
 }
+
+
+@media (max-width: 768px) {
+
+    
+    body {
+        overflow-x: hidden;
+    }
+
+   
+    .t {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px;
+    }
+
+    .t.left {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .t.right {
+        display: none;
+    }
+
+    #logo img {
+        height: 32px;
+        width: auto;
+    }
+
+    #Pincode {
+        display: none;
+    }
+
+    .t.middle {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    #dropdownall {
+        display: none;
+    }
+
+    #Searchbar input {
+        height: 34px;
+        font-size: 14px;
+    }
+
+    #Searchicon {
+        height: 34px;
+        padding: 0 10px;
+    }
+
+    .t2 {
+        padding: 0;
+    }
+
+    .t2 .nav-item:not(#menu) {
+        display: none;
+    }
+
+    #menu {
+        margin-left: 10px;
+    }
+
+    
+    .side-menu,
+    .side-menu *,
+    .side-overlay {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .side-menu {
+        width: 85%;
+        max-width: 320px;
+    }
+
+    .side-menu-section p {
+        display: block;
+        white-space: normal;
+    }
+
+    
+    .Productboxes {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 0 6px;
+    }
+
+    .Productboxes.Box {
+        margin: 6px 0;
+    }
+
+    .Productboxes.Box.pic {
+        font-size: 11px;
+    }
+
+    
+    .PageBottom.Middle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
