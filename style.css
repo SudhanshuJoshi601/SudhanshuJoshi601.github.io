@@ -173,7 +173,6 @@ div{
     background: #f3f3f3;
 }
 
-/* open menu */
 #side-menu-toggle:checked ~ .side-menu {
     left: 0;
 }
@@ -181,7 +180,12 @@ div{
 #side-menu-toggle:checked ~ .side-overlay {
     display: block;
 }
-
+.side-menu,
+.side-menu *,
+.side-overlay {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 
 
 
