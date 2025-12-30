@@ -73,16 +73,117 @@ div{
     color: gray;
     font-size:10px;
 }
-.t2{
+.t2 {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     background-color: #232f3e;
-    flex: 1;
     color: white;
-    margin-left: 0px;
-    margin-right: 0px;
-    font-size:14px;
+    font-size: 12px;         
+    padding: 0px;
+    gap: 0px;                 
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
 }
+
+
+.nav-item {
+    padding: 6px 0px;         
+    cursor: pointer;
+    line-height: 1;
+    margin:0 18px;
+}
+
+
+.nav-item:hover {
+    outline: 1px solid white;
+    border-radius: 2px;
+}
+
+
+
+#menu::before {
+    content: "☰ ";
+    font-size: 16px;
+}
+
+
+
+
+
+#side-menu-toggle {
+    display: none;
+}
+
+.side-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 998;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    width: 320px;
+    height: 100%;
+    background: #ffffff;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 999;
+    margin-left: 0 ;
+    margin-right: 0 ;
+}
+
+    
+
+
+
+.side-menu-header {
+    background: #232f3e;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.side-menu-section {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.side-menu-section h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+
+.side-menu-section p {
+    margin: 6px 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.side-menu-section p:hover {
+    background: #f3f3f3;
+}
+
+/* open menu */
+#side-menu-toggle:checked ~ .side-menu {
+    left: 0;
+}
+
+#side-menu-toggle:checked ~ .side-overlay {
+    display: block;
+}
+
+
+
 
 
 .Productboxes{
